@@ -1,12 +1,26 @@
 module.exports = {
   siteMetadata: {
     title: `Mar-sport`,
-    description: `Mar-sport`,
+    description: ``,
     author: `Krzysztof Skoczek`,
+    url: `http://localhost:8000`,
+    language: 'en',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-module-resolver',
+      options: {
+        root: './src',
+        aliases: {
+          components: './components',
+          static: {
+            root: './public',
+          },
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-layout`,
       options: {
@@ -14,17 +28,14 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-module-resolver",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
-        root: "./src",
-        aliases: {
-          components: "./components",
-          static: {
-            root: "./public",
-          },
+        rule: {
+          include: /\.inline\.svg$/,
         },
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,6 +43,7 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
