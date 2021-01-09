@@ -12,7 +12,7 @@ export const theme = {
     subFont: `'Kalam', cursive`,
   },
   colors: {
-    primary_color: `#7ac1ea;`,
+    color_primary: `#7ac1ea;`,
     white: `rgb(255, 255, 255);`,
     button_color: `linear-gradient(180deg,#7ac1ea 0,#0099b3 40 %,#04788c);`,
   },
@@ -24,15 +24,15 @@ export const theme = {
     bold: 700,
   },
   fontSize: {
-    xs: "1.4rem",
-    s: "1.6rem",
-    m: "1.8rem",
-    lg: "2rem",
-    xlg: "2.3rem",
-    xl: "2.8rem",
-    xxlm: "3.6rem",
-    xxl: "4.8rem",
-    xxxlm: "7rem",
+    xs: '1.4rem',
+    s: '1.6rem',
+    m: '1.8rem',
+    lg: '2rem',
+    xlg: '2.3rem',
+    xl: '2.8rem',
+    xxlm: '3.6rem',
+    xxl: '4.8rem',
+    xxxlm: '7rem',
   },
   mq: Object.keys(breakpoints).reduce((acc, breakpoint) => {
     acc[breakpoint] = `@media (min-width: ${breakpoints[breakpoint]}px)`

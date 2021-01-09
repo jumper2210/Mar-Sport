@@ -14,7 +14,9 @@ module.exports = {
       options: {
         root: './src',
         aliases: {
+          contexts: './contexts',
           components: './components',
+          assets: './assets',
           static: {
             root: './public',
           },
