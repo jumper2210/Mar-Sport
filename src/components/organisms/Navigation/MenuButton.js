@@ -6,8 +6,9 @@ const StyledButton = styled.button`
   position: fixed;
   top: 0px;
   right: 0px;
-  z-index: 20;
+  z-index: 100;
   background-color: transparent;
+  padding: 5px;
     ${({ isActive }) =>
       isActive &&
       css`
@@ -30,8 +31,8 @@ const StyledButton = styled.button`
 const Line = styled.path`
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: ${({ theme }) => theme.colors.primary_color};
-  stroke-width: 5.5;
+  stroke: ${({ theme }) => theme.colors.color_secondry};
+  stroke-width: 10px;
   stroke-linecap: round;
 `
 
@@ -58,7 +59,7 @@ const MenuButton = () => {
 
   return (
     <StyledButton onClick={toggleNav} isActive={isNavVisible}>
-      <SVG viewBox="0 0 100 100" width="60">
+      <SVG viewBox="0 0 100 100" width="70">
         <LineTop d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
         <Line d="m 30,50 h 40" />
         <LineBottom d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />

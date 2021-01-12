@@ -11,8 +11,8 @@ const Wrapper = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   z-index: 20;
+  justify-content: flex-end;
   ${({ theme }) => theme.mq.md} {
     display: none;
   }
@@ -50,10 +50,9 @@ const Background = styled.div`
   right: -80rem;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background: ${({ theme }) => theme.colors.gradient_color};
   will-change: transform;
+  z-index: -1;
 `
 
 const FullNav = () => {
@@ -90,11 +89,11 @@ const FullNav = () => {
       })
       tl.set(content, { visibility: 'visible' })
 
-      tl.to(background, { scale: 7, duration: 0.4, ease: 'expo.out', y: -100 })
+      tl.to(background, { scale: 9, duration: 0.4, ease: ' Circ.easeOut' })
 
       tl.addLabel('showItems')
 
-      tl.from(listItems, { x: -44, autoAlpha: 0, stagger: 0.2 }, 'showItems')
+      tl.from(listItems, { x: -50, autoAlpha: 0, stagger: 0.1 }, 'showItems')
     }
   }, [popInNavHandler])
 

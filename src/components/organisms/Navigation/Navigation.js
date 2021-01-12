@@ -8,21 +8,20 @@ import { NavigationContext } from 'contexts/NavigationProvider'
 
 const Wrapper = styled.nav`
   position: fixed;
-  height: 10vh;
+  height: 12vh;
   width: 100%;
   top: 0;
   left: 0;
-  background: ${({ theme }) => theme.colors.white};
+  background: rgb(255, 255, 255);
 `
 const InnerWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   height: 100%;
 `
-
 const LogoWrapper = styled.div`
   display: flex;
-  width: 10rem;
+  width: 13rem;
   height: 100%;
   justify-content: center;
   align-items: center;

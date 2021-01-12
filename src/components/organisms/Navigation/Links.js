@@ -15,7 +15,7 @@ const NavigationList = styled.li`
     left: 0px;
     bottom: -10px;
     width: 35px;
-    height: 1.9px;
+    height: 3px;
     background-color: ${({ theme }) => theme.colors.color_primary};
     transition: 0.4s;
     transform: scaleX(0);
@@ -24,7 +24,7 @@ const NavigationList = styled.li`
   ${({ isActive }) =>
     isActive &&
     css`
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.colors.color_primary};
       &:after {
         transform: scaleX(1.2);
       }
@@ -37,7 +37,7 @@ const NavigationList = styled.li`
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: ${({ theme }) => theme.colors.color_primary};
+      color: ${({ theme }) => theme.colors.white};
       &:after {
         content: none;
       }
@@ -45,11 +45,12 @@ const NavigationList = styled.li`
 `
 
 const StyledLink = styled(Link)`
-  color: ${({ theme }) => theme.colors.color_primary};
+  color: ${({ theme }) => theme.colors.color_secondary};
   text-decoration: none;
   transition: 0.2s;
   cursor: pointer;
-  font-size: ${({ theme }) => theme.fontSize.s};
+  font-size: ${({ theme }) => theme.fontSize.xlg};
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }

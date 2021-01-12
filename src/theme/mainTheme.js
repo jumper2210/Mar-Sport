@@ -13,8 +13,10 @@ export const theme = {
   },
   colors: {
     color_primary: `#7ac1ea;`,
+    color_secondry: `#00349D;`,
+    color_tertiary: `#ad1d45`,
     white: `rgb(255, 255, 255);`,
-    button_color: `linear-gradient(180deg,#7ac1ea 0,#0099b3 40 %,#04788c);`,
+    gradient_color: `linear-gradient(180deg,#7ac1ea 0,#0099b3 40%,#04788c);`,
   },
   fontWeight: {
     light: 300,
