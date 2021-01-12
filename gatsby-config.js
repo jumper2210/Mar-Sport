@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Mar-sport`,
+    title: `Mar sport`,
     description: ``,
     author: `Krzysztof Skoczek`,
     url: `http://localhost:8000`,
@@ -46,10 +46,21 @@ module.exports = {
       },
     },
 
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/data/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        display: `minimal-ui`,
+        icon: `./src/assets/images/logo.png`,
       },
     },
     `gatsby-transformer-sharp`,

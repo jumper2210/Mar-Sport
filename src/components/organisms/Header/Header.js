@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import HeaderImg from 'assets/images/headerImg.jpg'
 import CustomButton from 'components/atoms/CustomButton/CustomButton'
+import WaveImg from 'assets/images/WaveBottom.png'
 
 const Wrapper = styled.section`
   display: flex;
@@ -12,6 +13,8 @@ const Wrapper = styled.section`
   background-image: url(${HeaderImg});
   background-size: cover;
   background-position: center;
+  position: relative;
+  top: 0;
 `
 
 const ButtonWrapper = styled.div`
@@ -35,7 +38,7 @@ const TitlesWrapper = styled.span`
   ${({ theme }) => theme.mq.md} {
   }
 `
-const MainTitleWrapper = styled.span`
+const MainTitleWrapper = styled.h1`
   color: ${({ theme }) => theme.colors.color_secondry};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   font-size: ${({ theme }) => theme.fontSize.xxlm};
@@ -49,6 +52,15 @@ const SubTitleWrapper = styled.span`
   line-height: 2.7rem;
   font-weight: ${({ theme }) => theme.fontWeight.regular};
   font-family: ${({ theme }) => theme.fonts.subFont};
+`
+
+const StyledWaveImg = styled.img`
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(25%);
 `
 
 const Header = () => {
@@ -68,6 +80,7 @@ const Header = () => {
       <ButtonWrapper>
         <StyledCustomButton color="lightRed">o nas</StyledCustomButton>
       </ButtonWrapper>
+      <StyledWaveImg src={WaveImg} />
     </Wrapper>
   )
 }

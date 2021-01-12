@@ -12,7 +12,10 @@ const Wrapper = styled.nav`
   width: 100%;
   top: 0;
   left: 0;
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  z-index: 20;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 `
 const InnerWrapper = styled.div`
   display: flex;
