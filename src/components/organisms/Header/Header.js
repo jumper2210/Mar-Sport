@@ -21,6 +21,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-bottom: 2rem;
 `
 const StyledCustomButton = styled(CustomButton)`
   padding: 1rem 4rem;
@@ -39,7 +40,7 @@ const TitlesWrapper = styled.span`
   }
 `
 const MainTitleWrapper = styled.h1`
-  color: ${({ theme }) => theme.colors.color_secondry};
+  color: ${({ theme }) => theme.colors.color_secondary};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   font-size: ${({ theme }) => theme.fontSize.xxlm};
   font-family: ${({ theme }) => theme.fonts.subFont};
@@ -47,7 +48,7 @@ const MainTitleWrapper = styled.h1`
   line-height: 4rem;
 `
 const SubTitleWrapper = styled.span`
-  color: ${({ theme }) => theme.colors.color_secondry};
+  color: ${({ theme }) => theme.colors.color_secondary};
   font-size: ${({ theme }) => theme.fontSize.lg};
   line-height: 2.7rem;
   font-weight: ${({ theme }) => theme.fontWeight.regular};

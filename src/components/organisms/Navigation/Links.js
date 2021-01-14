@@ -8,7 +8,7 @@ const NavigationList = styled.li`
   display: flex;
   position: relative;
   z-index: 100;
-  color: ${({ theme }) => theme.colors.color_secondry};
+  color: ${({ theme }) => theme.colors.color_secondary};
   &:after {
     content: '';
     position: absolute;
@@ -16,7 +16,7 @@ const NavigationList = styled.li`
     bottom: -10px;
     width: 35px;
     height: 3px;
-    background-color: ${({ theme }) => theme.colors.color_secondry};
+    background-color: ${({ theme }) => theme.colors.color_secondary};
     transition: 0.4s;
     transform: scaleX(0);
     transform-origin: 0 50%;
@@ -24,7 +24,7 @@ const NavigationList = styled.li`
   ${({ isActive }) =>
     isActive &&
     css`
-      color: ${({ theme }) => theme.colors.color_secondry};
+      color: ${({ theme }) => theme.colors.color_secondary};
       &:after {
         transform: scaleX(1.2);
       }

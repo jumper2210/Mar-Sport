@@ -5,7 +5,7 @@ import Image from 'gatsby-image'
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background: ${({ theme }) => theme.colors.color_secondry};
+  background: ${({ theme }) => theme.colors.color_secondary};
   width: 100%;
   max-width: 500px;
 `
@@ -29,11 +29,11 @@ const TextWrapper = styled.div`
   padding: 0.5rem;
 `
 const Name = styled.h3`
-  color: ${({ theme }) => theme.colors.color_secondry};
+  color: ${({ theme }) => theme.colors.color_secondary};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
 `
 const Description = styled.p`
-  color: ${({ theme }) => theme.colors.color_secondry};
+  color: ${({ theme }) => theme.colors.color_secondary};
 `
 
 const Trainer = ({ fullName, description, image }) => {

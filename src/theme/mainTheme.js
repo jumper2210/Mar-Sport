@@ -13,7 +13,7 @@ export const theme = {
   },
   colors: {
     color_primary: `#7ac1ea;`,
-    color_secondry: `#15498b;`,
+    color_secondary: `#15498b;`,
     color_tertiary: `#ad1d45`,
     white: `rgb(255, 255, 255);`,
     gradient_color: `linear-gradient(180deg,#7ac1ea 0,#0099b3 40%,#04788c);`,

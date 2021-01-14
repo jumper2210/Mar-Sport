@@ -2,9 +2,7 @@ import styled, { css } from 'styled-components'
 
 const Button = styled.button`
   text-decoration: none;
-  text-transform: uppercase;
-  padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSize.s};
   background: ${({ theme }) => theme.colors.color_secondary};
@@ -18,7 +16,7 @@ const Button = styled.button`
   ${({ color }) =>
     color === 'blue' &&
     css`
-      background: ${({ theme }) => theme.colors.gradient_color} !important;
+      background: ${({ theme }) => theme.colors.color_secondary} !important;
       &:hover {
         border-color: ${({ theme }) => theme.colors.color_secondary};
         background: ${({ theme }) => theme.colors.color_secondary};

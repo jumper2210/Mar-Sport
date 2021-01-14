@@ -31,7 +31,7 @@ const StyledButton = styled.button`
 const Line = styled.path`
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: ${({ theme }) => theme.colors.color_secondry};
+  stroke: ${({ theme }) => theme.colors.color_secondary};
   stroke-width: 10px;
   stroke-linecap: round;
 `

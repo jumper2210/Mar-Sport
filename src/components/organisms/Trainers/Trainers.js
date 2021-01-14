@@ -13,7 +13,7 @@ const Wrapper = styled.section`
   left: 0;
   height: 120vh;
   width: 100vw;
-  background: ${({ theme }) => theme.colors.color_secondry};
+  background: ${({ theme }) => theme.colors.color_secondary};
 `
 const HeadingWrappper = styled.div`
   display: flex;
@@ -39,11 +39,11 @@ const Heading = styled.h2`
 
 const WaveBottomImg = styled.img`
   width: 100%;
-  height: 40%;
+  height: 50%;
   object-fit: cover;
   position: absolute;
   bottom: 0;
-  transform: translateY(25%);
+  transform: translateY(28%);
 `
 
 const Trainers = () => {
