@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 import Trainer from './Trainer'
-import WaveBottom from 'assets/images/wave.png'
+import WaveTop from 'assets/images/waveTop.png'
+import WaveBottom from 'assets/images/waveBottom.png'
 
 const Wrapper = styled.section`
   position: relative;
@@ -11,8 +12,7 @@ const Wrapper = styled.section`
   align-items: center;
   top: 0;
   left: 0;
-  height: 120vh;
-  width: 100vw;
+  height: 100vh;
   background: ${({ theme }) => theme.colors.color_secondary};
 `
 const HeadingWrappper = styled.div`
@@ -43,9 +43,16 @@ const WaveBottomImg = styled.img`
   object-fit: cover;
   position: absolute;
   bottom: 0;
-  transform: translateY(28%);
+  transform: translateY(20%);
 `
-
+const WaveTopImg = styled.img`
+  height: 30%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  transform: translateY(-40%);
+`
 const Trainers = () => {
   const { allTrainersJson } = useStaticQuery(graphql`
     {
@@ -67,6 +74,7 @@ const Trainers = () => {
 
   return (
     <Wrapper id="trainers">
+      <WaveTopImg src={WaveTop} />
       <HeadingWrappper>
         <Heading>Nasi instruktorzy</Heading>
       </HeadingWrappper>

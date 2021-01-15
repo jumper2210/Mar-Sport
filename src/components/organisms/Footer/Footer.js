@@ -1,5 +1,5 @@
 import React from 'react'
-import WaveFooterImg from 'assets/images/Footer.png'
+import WaveFooterImg from 'assets/images/waveFooter.png'
 import styled from 'styled-components'
 
 const Wrapper = styled.footer`
