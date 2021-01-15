@@ -52,7 +52,7 @@ const StyledLink = styled(Link)`
   font-size: ${({ theme }) => theme.fontSize.xlg};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   &:hover {
-    color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.color_primary};
   }
 `
 
@@ -63,7 +63,7 @@ const LinkWrapper = styled.div`
     css`
       display: flex;
       justify-content: space-around;
-      background-color: ${({ theme }) => theme.colors.color_primary};
+      background-color: ${({ theme }) => theme.colors.white};
       border-radius: 1.4rem;
       width: 14rem;
       padding: 1rem;
@@ -86,28 +86,36 @@ const Links = ({ mobile }) => {
 
       <NavigationList
         mobile={mobile || false}
-        isActive={activeLink === 'aboutUs'}
+        isActive={activeLink === 'trainers'}
       >
         <LinkWrapper mobile={mobile || false}>
-          <StyledLink duration={300} smooth={matches} to="oferta">
+          <StyledLink duration={300} smooth={matches} to="trainers">
+            Trenerzy
+          </StyledLink>
+        </LinkWrapper>
+      </NavigationList>
+
+      <NavigationList
+        mobile={mobile || false}
+        isActive={activeLink === 'offers'}
+      >
+        <LinkWrapper mobile={mobile || false}>
+          <StyledLink duration={300} smooth={matches} to="offers">
             Oferta
           </StyledLink>
         </LinkWrapper>
       </NavigationList>
+
       <NavigationList
         mobile={mobile || false}
-        isActive={activeLink === 'technologies'}
+        isActive={activeLink === 'contact'}
       >
         <LinkWrapper mobile={mobile || false}>
-          <StyledLink duration={300} smooth={matches} to="kontakt">
+          <StyledLink duration={300} smooth={matches} to="contact">
             Kontakt
           </StyledLink>
         </LinkWrapper>
       </NavigationList>
-      <NavigationList
-        mobile={mobile || false}
-        isActive={activeLink === 'contact'}
-      ></NavigationList>
     </>
   )
 }

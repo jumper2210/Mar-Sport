@@ -23,7 +23,7 @@ const InnerWrapper = styled.div`
 
 const Contact = () => {
   return (
-    <Wrapper id="Contact">
+    <Wrapper id="contact">
       <InnerWrapper>
         <ContactItem
           iconURL={HomeIcon}

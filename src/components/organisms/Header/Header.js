@@ -3,8 +3,11 @@ import styled from 'styled-components'
 import HeaderImg from 'assets/images/headerImg.jpg'
 import CustomButton from 'components/atoms/CustomButton/CustomButton'
 import WaveImg from 'assets/images/WaveBottom.png'
+import { Link } from 'react-scroll'
 
 const Wrapper = styled.section`
+  position: relative;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -13,15 +16,15 @@ const Wrapper = styled.section`
   background-image: url(${HeaderImg});
   background-size: cover;
   background-position: center;
-  position: relative;
-  top: 0;
 `
 
 const ButtonWrapper = styled.div`
   display: flex;
+  position: absolute;
+  bottom: 8%;
   justify-content: center;
+  z-index: 10;
   width: 100%;
-  padding-bottom: 2rem;
 `
 const StyledCustomButton = styled(CustomButton)`
   padding: 1rem 4rem;
@@ -33,7 +36,7 @@ const TitlesWrapper = styled.span`
   height: 70vh;
   flex-direction: column;
   justify-content: space-around;
-  padding: 5rem 1rem 0rem 1rem;
+  padding: 0 2rem;
   align-items: center;
   text-align: center;
   ${({ theme }) => theme.mq.md} {
@@ -66,7 +69,7 @@ const StyledWaveImg = styled.img`
 
 const Header = () => {
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <TitlesWrapper>
         <MainTitleWrapper>
           Szkółka pływacka <br />
@@ -79,7 +82,9 @@ const Header = () => {
         </SubTitleWrapper>
       </TitlesWrapper>
       <ButtonWrapper>
-        <StyledCustomButton color="lightRed">o nas</StyledCustomButton>
+        <Link to="contact">
+          <StyledCustomButton color="lightRed">o nas</StyledCustomButton>
+        </Link>
       </ButtonWrapper>
       <StyledWaveImg src={WaveImg} />
     </Wrapper>

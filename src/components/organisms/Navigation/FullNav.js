@@ -56,7 +56,7 @@ const Background = styled.div`
 `
 
 const FullNav = () => {
-  const { popInNavHandler } = useContext(NavigationContext)
+  const { handlePopIn } = useContext(NavigationContext)
   const listRef = useRef(null)
   const contentRef = useRef(null)
   const bgRef = useRef(null)
@@ -74,7 +74,7 @@ const FullNav = () => {
 
       const closePopInNav = () => {
         tl.reverse()
-        popInNavHandler(false)
+        handlePopIn(false)
       }
       const clickHandler = () => {
         tl.reversed() ? tl.play() : tl.reverse()
@@ -89,13 +89,18 @@ const FullNav = () => {
       })
       tl.set(content, { visibility: 'visible' })
 
-      tl.to(background, { scale: 9, duration: 0.4, ease: ' Circ.easeOut' })
+      tl.to(background, {
+        scale: 7,
+        duration: 0.4,
+        ease: ' Circ.easeOut',
+        y: -100,
+      })
 
       tl.addLabel('showItems')
 
-      tl.from(listItems, { x: -50, autoAlpha: 0, stagger: 0.1 }, 'showItems')
+      tl.from(listItems, { x: -44, autoAlpha: 0, stagger: 0.2 }, 'showItems')
     }
-  }, [popInNavHandler])
+  }, [])
 
   return (
     <Wrapper>
