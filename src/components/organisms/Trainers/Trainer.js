@@ -5,11 +5,7 @@ import Image from 'gatsby-image'
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background: ${({ theme }) => theme.colors.color_secondary};
   width: 100%;
-  max-width: 500px;
-`
-const InnerWrapper = styled.div`
   position: relative;
 `
 const TextWrapper = styled.div`
@@ -39,13 +35,11 @@ const Description = styled.p`
 const Trainer = ({ fullName, description, image }) => {
   return (
     <Wrapper>
-      <InnerWrapper>
-        <Image fluid={image} alt={fullName} />
-        <TextWrapper>
-          <Name>{fullName}</Name>
-          <Description>{description}</Description>
-        </TextWrapper>
-      </InnerWrapper>
+      <Image fluid={image} alt={fullName} />
+      <TextWrapper>
+        <Name>{fullName}</Name>
+        <Description>{description}</Description>
+      </TextWrapper>
     </Wrapper>
   )
 }

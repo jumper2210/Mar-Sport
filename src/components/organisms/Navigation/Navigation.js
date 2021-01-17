@@ -14,7 +14,7 @@ const Wrapper = styled.nav`
   left: 0;
   background: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-  z-index: 20;
+  z-index: 25;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 `
 const InnerWrapper = styled.div`

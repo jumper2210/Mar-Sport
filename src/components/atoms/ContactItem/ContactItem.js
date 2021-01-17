@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
   ${({ color }) =>
     color === 'blue' &&
     css`
@@ -26,23 +27,24 @@ const Wrapper = styled.div`
 `
 const Icon = styled.img`
   width: 50%;
-  height: 30%;
+  height: 50%;
   object-fit: contain;
 `
 
-const Name = styled.div`
+const Name = styled.h3`
   color: ${({ theme }) => theme.colors.white};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   font-family: ${({ theme }) => theme.fonts.subFont};
   text-transform: uppercase;
+  padding: 4rem 0;
 `
 
-const TrainerData = styled.div`
+const TrainerData = styled.p`
   color: ${({ theme }) => theme.colors.white};
   font-family: ${({ theme }) => theme.fonts.subFont};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
 `
-const InnerWrapper = styled.div`
+const InnerWrapper = styled.p`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -50,7 +52,12 @@ const InnerWrapper = styled.div`
   width: 100%;
   align-items: center;
 `
-
+const SecondTrainerData = styled.p`
+  color: ${({ theme }) => theme.colors.white};
+  font-family: ${({ theme }) => theme.fonts.subFont};
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
+  padding-top: 1rem;
+`
 const ContactItem = ({
   iconURL,
   name,
@@ -64,11 +71,7 @@ const ContactItem = ({
         <Icon src={iconURL} />
         <Name>{name}</Name>
         <TrainerData>{firstTrainerData}</TrainerData>
-        <TrainerData>
-          {secondTrainerData && secondTrainerData.lenght > 0
-            ? secondTrainerData
-            : ''}
-        </TrainerData>
+        <SecondTrainerData>{secondTrainerData}</SecondTrainerData>
       </InnerWrapper>
     </Wrapper>
   )

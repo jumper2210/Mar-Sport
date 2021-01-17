@@ -58,6 +58,9 @@ const StyledLink = styled(Link)`
 
 const LinkWrapper = styled.div`
   padding-right: 10rem;
+  ${({ theme }) => theme.mq.md} {
+    padding-right: 6rem;
+  }
   ${({ mobile }) =>
     mobile &&
     css`

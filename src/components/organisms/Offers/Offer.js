@@ -3,14 +3,6 @@ import styled from 'styled-components'
 import OfferWrapper from 'components/atoms/OfferWrapper/OfferWrapper'
 import ReadMoreReact from 'read-more-react'
 
-const InnerWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 60%;
-  width: 100%;
-  align-items: center;
-`
 const IconWrapper = styled.div`
   position: absolute;
   display: flex;
@@ -23,23 +15,44 @@ const IconWrapper = styled.div`
   height: 9rem;
   border-radius: 50%;
   background: #ececec;
+  ${({ theme }) => theme.mq.xl} {
+    width: 11rem;
+    height: 11rem;
+  }
 `
 const Name = styled.h3`
   color: ${({ theme }) => theme.colors.color_secondary};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   font-family: ${({ theme }) => theme.fonts.subFont};
   text-transform: uppercase;
-  padding-top: 1rem;
+  padding-top: 8rem;
+  ${({ theme }) => theme.mq.md} {
+    font-size: ${({ theme }) => theme.fontSize.xlg};
+  }
+  ${({ theme }) => theme.mq.xl} {
+    font-size: ${({ theme }) => theme.fontSize.xl};
+  }
 `
 const TrainerName = styled.p`
   font-weight: ${({ theme }) => theme.fontSize.m};
   color: ${({ theme }) => theme.colors.color_secondary};
+  padding-top: 4rem;
+  ${({ theme }) => theme.mq.md} {
+    font-size: ${({ theme }) => theme.fontSize.m};
+  }
+  ${({ theme }) => theme.mq.xl} {
+    font-size: ${({ theme }) => theme.fontSize.lg};
+  }
 `
 
 const Icon = styled.img`
   width: 50%;
   height: 70%;
   object-fit: contain;
+  ${({ theme }) => theme.mq.xl} {
+    width: 65%;
+    height: 80%;
+  }
 `
 const DetailsWrapper = styled.div`
   width: 70%;
@@ -56,25 +69,23 @@ const DetailsWrapper = styled.div`
 const Offer = ({ name, trainer, description, icon, borderColor }) => {
   return (
     <OfferWrapper borderColor={borderColor}>
-      <InnerWrapper>
-        <IconWrapper>
-          <Icon src={icon.publicURL} />
-        </IconWrapper>
-        <Name>{name}</Name>
-        <TrainerName>
-          Instruktor &nbsp;
-          {trainer}
-        </TrainerName>
-        <DetailsWrapper>
-          <ReadMoreReact
-            text={description}
-            min={0}
-            ideal={0}
-            max={200}
-            readMoreText="szczegóły"
-          />
-        </DetailsWrapper>
-      </InnerWrapper>
+      <IconWrapper>
+        <Icon src={icon.publicURL} />
+      </IconWrapper>
+      <Name>{name}</Name>
+      <TrainerName>
+        Instruktor &nbsp;
+        {trainer}
+      </TrainerName>
+      <DetailsWrapper>
+        <ReadMoreReact
+          text={description}
+          min={0}
+          ideal={0}
+          max={200}
+          readMoreText="szczegóły"
+        />
+      </DetailsWrapper>
     </OfferWrapper>
   )
 }
