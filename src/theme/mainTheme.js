@@ -9,7 +9,7 @@ const breakpoints = {
 export const theme = {
   fonts: {
     mainFont: `'Poppins', sans-serif`,
-    subFont: `'Kalam', cursive`,
+    subFont: `'Roboto', sans-serif`,
   },
   colors: {
     color_primary: `#7ac1ea;`,

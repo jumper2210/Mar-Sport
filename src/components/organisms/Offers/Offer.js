@@ -64,6 +64,8 @@ const DetailsWrapper = styled.div`
   color: ${({ theme }) => theme.colors.color_secondary};
   font-family: ${({ theme }) => theme.fonts.subFont};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
+  font-size: ${({ theme }) => theme.fontSize.lg};
+  cursor: pointer;
 `
 
 const Offer = ({ name, trainer, description, icon, borderColor }) => {

@@ -7,7 +7,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 const Wrapper = styled.section`
   position: relative;
-  height: 120vh;
+  height: 110vh;
   top: 0;
   background-image: url(${HeaderImg});
   background-size: cover;
@@ -28,7 +28,7 @@ const Gradient = styled.div`
   width: 100%;
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.6));
 `
 const TitlesWrapper = styled.span`
   display: flex;
