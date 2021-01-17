@@ -1,9 +1,9 @@
 import React, { useContext, useRef, useEffect } from 'react'
 import styled from 'styled-components'
-import { NavigationContext } from 'contexts/NavigationProvider'
+import { NavigationContext } from '../../../contexts/NavigationProvider'
 import gsap from 'gsap'
-import Links from 'components/organisms/Navigation/Links'
-import MenuButton from 'components/organisms/Navigation/MenuButton'
+import Links from '../../../components/organisms/Navigation/Links'
+import MenuButton from '../../../components/organisms/Navigation/MenuButton'
 
 const Wrapper = styled.div`
   position: relative;

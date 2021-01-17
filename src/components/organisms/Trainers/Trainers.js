@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 import Trainer from './Trainer'
-import Fade from 'react-reveal/Fade'
 
 const Wrapper = styled.section`
   display: flex;

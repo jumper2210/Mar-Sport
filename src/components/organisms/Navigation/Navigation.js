@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import styled from 'styled-components'
-import Logo from 'components/atoms/Logo/Logo'
-import FullNav from 'components/organisms/Navigation/FullNav'
-import Links from 'components/organisms/Navigation/Links'
+import Logo from '../../../components/atoms/Logo/Logo'
+import FullNav from '../../../components/organisms/Navigation/FullNav'
+import Links from '../../../components/organisms/Navigation/Links'
 import gsap from 'gsap'
-import { NavigationContext } from 'contexts/NavigationProvider'
+import { NavigationContext } from '../../../contexts/NavigationProvider'
 
 const Wrapper = styled.nav`
   position: fixed;

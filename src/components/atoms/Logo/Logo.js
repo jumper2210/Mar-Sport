@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logoImg from 'assets/images/logo.png'
+import logoImg from '../../../assets/images/logo.png'
 
 const Img = styled.img`
   width: 100%;

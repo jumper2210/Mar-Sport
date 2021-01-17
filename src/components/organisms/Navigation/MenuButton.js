@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import styled, { css } from 'styled-components'
-import { NavigationContext } from 'contexts/NavigationProvider'
+import { NavigationContext } from '../../../contexts/NavigationProvider'
 
 const StyledButton = styled.button`
   position: fixed;

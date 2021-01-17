@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import ContactItem from 'components/atoms/ContactItem/ContactItem'
-import MailIcon from 'assets/icons/mail.svg'
-import PhoneIcon from 'assets/icons/phone-call.svg'
-import HomeIcon from 'assets/icons/home.svg'
+import MailIcon from '../../../assets/icons/mail.svg'
+import PhoneIcon from '../../../assets/icons/phone-call.svg'
+import HomeIcon from '../../../assets/icons/home.svg'
 import Fade from 'react-reveal/Fade'
 
 const Wrapper = styled.section`

@@ -9,20 +9,20 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: 'gatsby-plugin-module-resolver',
-      options: {
-        root: './src',
-        aliases: {
-          contexts: './contexts',
-          components: './components',
-          assets: './assets',
-          static: {
-            root: './public',
-          },
-        },
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-module-resolver',
+    //   options: {
+    //     root: './src',
+    //     aliases: {
+    //       contexts: './contexts',
+    //       components: './components',
+    //       assets: './assets',
+    //       static: {
+    //         root: './public',
+    //       },
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-layout`,
       options: {

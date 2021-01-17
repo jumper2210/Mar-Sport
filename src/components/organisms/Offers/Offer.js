@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import OfferWrapper from 'components/atoms/OfferWrapper/OfferWrapper'
+import OfferWrapper from '../../../components/atoms/OfferWrapper/OfferWrapper'
 import ReadMoreReact from 'read-more-react'
 
 const IconWrapper = styled.div`

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import HeaderImg from 'assets/images/headerImg.jpg'
-import CustomButton from 'components/atoms/CustomButton/CustomButton'
+import HeaderImg from '../../../assets/images/headerImg.jpg'
+import CustomButton from '../../../components/atoms/CustomButton/CustomButton'
 import { Link } from 'react-scroll'
 import { Parallax } from 'react-scroll-parallax'
 

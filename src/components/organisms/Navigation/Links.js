@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import styled, { css } from 'styled-components'
 import { Link } from 'react-scroll'
-import useMedia from 'components/hooks/mediaHook'
-import { NavigationContext } from 'contexts/NavigationProvider'
+import useMedia from '../../../components/hooks/mediaHook'
+import { NavigationContext } from '../../../contexts/NavigationProvider'
 
 const NavigationList = styled.li`
   display: flex;
