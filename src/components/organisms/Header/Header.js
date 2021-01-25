@@ -94,7 +94,7 @@ const StyledCustomButton = styled(CustomButton)`
 `
 const Header = () => {
   return (
-    <Parallax className="custom-class" y={[-30, 30]} tagOuter="figure">
+    <Parallax className="custom-class" y={[-15, 15]} tagOuter="figure">
       <Wrapper id="home">
         <Gradient />
         <InnerWrapper>
