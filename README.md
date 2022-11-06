@@ -11,7 +11,7 @@ Buisness page created for Marcin Krawczyk.
 - RWD (frist-mobile) 
 
 ### Live
-[click me](https://silly-shirley-9a791e.netlify.app/)
+[click me](https://mar-sport.netlify.app/)
 
 #### Author
 Krzysztof Skoczek
